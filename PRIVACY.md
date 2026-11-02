@@ -40,6 +40,8 @@ NASA, музеи (The Met, Эрмитаж, Кливленд, SMK, V&A и дру�
 Письмо из приложения (Настройки → Приложение → «Написать отзыв») уходит с вашей почты; в нём только то, что вы написали,
 плюс версия приложения, модель устройства и версия Android — чтобы было проще разобраться с ошибкой.
 
+Вопросы и отзывы: **diafilm@tacthub.net**.
+
 ## Изменения
 
 Если политика изменится, новая версия появится здесь, на этой странице.
@@ -53,3 +55,4 @@ settings and service keys stay on your device. To show pictures the app requests
 Spotlight, Wikimedia Commons, NASA, museums, Wallhaven, Unsplash with your key); they see your IP address like any website.
 On phones some pictures are resized via the project server (img.tacthub.net) or wsrv.nl — only the picture URL is sent.
 The GitHub version checks github.com for updates; store versions are updated by the store.
+Contact: **diafilm@tacthub.net**.
