@@ -55,3 +55,21 @@ footer a { margin-right: 18px; }
   .shots.phone img { height: 380px; }
   .shots.tv img { height: 180px; }
 }
+
+/* Поддержать */
+.pay { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn2 { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 12px 32px; }
+.crypto { display: grid; gap: 12px; margin-top: 12px; }
+.coin { display: flex; gap: 18px; align-items: center; }
+.coin img { width: 160px; height: 160px; background: #fff; border-radius: 10px; padding: 6px; flex: none; }
+.coin b { display: block; margin-bottom: 6px; }
+.addr { display: block; word-break: break-all; font-size: 15px; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 10px; margin-bottom: 10px; }
+.copy { background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 10px;
+  padding: 8px 16px; font: inherit; font-size: 15px; cursor: pointer; }
+.copy:hover { border-color: var(--accent); }
+.btn-support { margin-left: 10px; }
+@media (max-width: 600px) {
+  .coin { flex-direction: column; align-items: flex-start; }
+  .btn-support { margin: 12px 0 0; }
+}

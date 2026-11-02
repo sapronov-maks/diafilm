@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diafilm — поддержать проект</title>
+<meta name="description" content="Diafilm бесплатный и без рекламы. Поддержать проект можно картой, через Boosty или криптовалютой.">
+<link rel="icon" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap doc">
+<a class="back" href="./">← Diafilm</a>
+<h1>Поддержать проект</h1>
+<p>Diafilm бесплатный, без рекламы и без сбора данных — и таким останется. Если приложение вам нравится,
+можно поддержать его развитие: любая сумма помогает оплачивать сервер и время на новые возможности. Спасибо!</p>
+
+<h2>Картой</h2>
+<div class="pay">
+  <a class="btn" href="https://pay.cloudtips.ru/p/8c5d9939" target="_blank" rel="noopener">Перевести через CloudTips</a>
+  <a class="btn btn2" href="https://boosty.to/diafilmwallpaper/donate" target="_blank" rel="noopener">Поддержать на Boosty</a>
+</div>
+<p class="note">CloudTips — разовый перевод с банковской карты. Boosty — разово или подпиской.</p>
+
+<h2>Криптовалютой</h2>
+<p class="note">Отправляйте только в указанной сети — монеты из другой сети потеряются.</p>
+<div class="crypto">
+  <div class="card coin">
+    <img src="img/qr-ton.svg" alt="QR-код адреса TON" width="160" height="160">
+    <div>
+      <b>TON и USDT (сеть TON)</b>
+      <code class="addr">UQBfg0H88RWS277ztS4ay4tQrVbWLfgQh00rCtbpMObmyb31</code>
+      <button class="copy" type="button">Скопировать</button>
+    </div>
+  </div>
+  <div class="card coin">
+    <img src="img/qr-tron.svg" alt="QR-код адреса Tron" width="160" height="160">
+    <div>
+      <b>USDT (TRC20, сеть Tron) и TRX</b>
+      <code class="addr">TKy3pvutgH9aCWNCTPxHk9JfKxRafARuHt</code>
+      <button class="copy" type="button">Скопировать</button>
+    </div>
+  </div>
+  <div class="card coin">
+    <img src="img/qr-ltc.svg" alt="QR-код адреса Litecoin" width="160" height="160">
+    <div>
+      <b>Litecoin (LTC)</b>
+      <code class="addr">ltc1qapvfkqn424espzmsufz59tu49ydt7jvjatcq99</code>
+      <button class="copy" type="button">Скопировать</button>
+    </div>
+  </div>
+</div>
+
+<h2>Без денег</h2>
+<ul>
+  <li>Расскажите о Diafilm друзьям.</li>
+  <li>Напишите, что улучшить или что сломалось: <a href="mailto:diafilm@tacthub.net">diafilm@tacthub.net</a>
+      или в приложении: Настройки → Приложение → «Написать отзыв».</li>
+</ul>
+</main>
+<script>
+document.querySelectorAll('.copy').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var text = b.parentNode.querySelector('.addr').textContent.trim();
+    navigator.clipboard.writeText(text).then(function () {
+      b.textContent = 'Скопировано';
+      setTimeout(function () { b.textContent = 'Скопировать'; }, 2000);
+    });
+  });
+});
+</script>
+</body>
+</html>
