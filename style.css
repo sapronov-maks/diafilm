@@ -1,0 +1,57 @@
+/* Цвета — как в приложении (Ui.kt). */
+:root {
+  --bg: #0F1013; --surface: #181A1F; --border: #2C3036;
+  --text: #F3F1EC; --muted: #A4A8B0; --accent: #F2B544; --on-accent: #1A1405;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+
+header.hero { text-align: center; padding: 56px 0 40px; }
+.hero img.icon { width: 112px; height: 112px; border-radius: 26px; }
+.hero h1 { font-size: 44px; margin: 14px 0 6px; letter-spacing: .5px; }
+.hero p.lead { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 560px; }
+.btn {
+  display: inline-block; background: var(--accent); color: var(--on-accent); text-decoration: none;
+  font-weight: 700; font-size: 19px; padding: 14px 34px; border-radius: 14px;
+}
+.btn:hover { filter: brightness(1.08); }
+.note { color: var(--muted); font-size: 15px; margin-top: 12px; }
+
+section { padding: 36px 0; border-top: 1px solid var(--border); }
+section h2 { font-size: 28px; margin: 0 0 14px; }
+ul.points { padding-left: 22px; margin: 0 0 22px; }
+ul.points li { margin: 6px 0; }
+.shots { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 8px; }
+.shots img { border-radius: 14px; border: 1px solid var(--border); flex: none; }
+.shots.phone img { height: 460px; }
+.shots.tv img { height: 260px; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; }
+.card b { display: block; margin-bottom: 2px; }
+.card span { color: var(--muted); font-size: 15px; }
+
+ol.steps { padding-left: 22px; }
+ol.steps li { margin: 8px 0; }
+
+footer { border-top: 1px solid var(--border); padding: 28px 0 48px; color: var(--muted); font-size: 15px; }
+footer a { margin-right: 18px; }
+
+/* Политика */
+.doc { max-width: 760px; padding-top: 32px; padding-bottom: 32px; }
+.doc h1 { font-size: 32px; }
+.doc h2 { font-size: 22px; margin-top: 30px; }
+.doc hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+.back { display: inline-block; margin-bottom: 8px; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 36px; }
+  .shots.phone img { height: 380px; }
+  .shots.tv img { height: 180px; }
+}
