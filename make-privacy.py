@@ -24,7 +24,10 @@ for line in open(src, encoding="utf-8").read().splitlines():
         out.append("</ul>"); lst = False
     if not s: flush(); continue
     m = re.match(r"(#+) (.*)", s)
-    if m: flush(); n = len(m.group(1)); out.append(f"<h{n}>{inline(m.group(2))}</h{n}>"); continue
+    if m:
+        flush(); n = len(m.group(1))
+        anchor = ' id="english"' if n == 1 and "(English)" in m.group(2) else ""
+        out.append(f"<h{n}{anchor}>{inline(m.group(2))}</h{n}>"); continue
     if s == "---": flush(); out.append("<hr>"); continue
     para.append(s)
 flush()

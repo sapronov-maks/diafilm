@@ -12,7 +12,18 @@ body {
 a { color: var(--accent); }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 
-header.hero { text-align: center; padding: 56px 0 40px; }
+html[data-lang="ru"] [data-l="en"], html[data-lang="en"] [data-l="ru"] { display: none !important; }
+nav.lang { display: flex; justify-content: flex-end; gap: 6px; padding-top: 16px; }
+nav.lang button {
+  background: transparent; color: var(--accent); border: 1px solid transparent; border-radius: 10px;
+  padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer;
+}
+nav.lang button:hover { border-color: var(--border); }
+html[data-lang="ru"] nav.lang [data-set="ru"], html[data-lang="en"] nav.lang [data-set="en"] {
+  color: var(--text); border-color: var(--border); background: var(--surface); cursor: default;
+}
+
+header.hero { text-align: center; padding: 40px 0 40px; }
 .hero img.icon { width: 112px; height: 112px; border-radius: 26px; }
 .hero h1 { font-size: 44px; margin: 14px 0 6px; letter-spacing: .5px; }
 .hero p.lead { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 560px; }

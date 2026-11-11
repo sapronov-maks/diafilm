@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-lang="ru"
+      data-title-ru="Diafilm — поддержать проект"
+      data-title-en="Diafilm — support the project">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diafilm — поддержать проект</title>
-<meta name="description" content="Diafilm бесплатный и без рекламы. Поддержать проект можно картой, через Boosty или криптовалютой.">
+<meta name="description" content="Diafilm бесплатный и без рекламы. Поддержать проект можно картой, через Boosty или криптовалютой. Diafilm is free and has no ads. You can support the project by card, via Boosty or with cryptocurrency.">
 <link rel="icon" href="img/favicon.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
-<main class="wrap doc">
+
+<nav class="lang wrap">
+  <button type="button" data-set="ru" lang="ru">Русский</button>
+  <button type="button" data-set="en" lang="en">English</button>
+</nav>
+
+<main class="wrap doc" data-l="ru" lang="ru">
 <a class="back" href="./">← Diafilm</a>
 <h1>Поддержать проект</h1>
 <p>Diafilm бесплатный, без рекламы и без сбора данных — и таким останется. Если приложение вам нравится,
@@ -30,7 +39,7 @@
     <div>
       <b>TON и USDT (сеть TON)</b>
       <code class="addr">UQBfg0H88RWS277ztS4ay4tQrVbWLfgQh00rCtbpMObmyb31</code>
-      <button class="copy" type="button">Скопировать</button>
+      <button class="copy" type="button" data-done="Скопировано">Скопировать</button>
     </div>
   </div>
   <div class="card coin">
@@ -38,7 +47,7 @@
     <div>
       <b>USDT (TRC20, сеть Tron) и TRX</b>
       <code class="addr">TKy3pvutgH9aCWNCTPxHk9JfKxRafARuHt</code>
-      <button class="copy" type="button">Скопировать</button>
+      <button class="copy" type="button" data-done="Скопировано">Скопировать</button>
     </div>
   </div>
   <div class="card coin">
@@ -46,7 +55,7 @@
     <div>
       <b>Litecoin (LTC)</b>
       <code class="addr">ltc1qapvfkqn424espzmsufz59tu49ydt7jvjatcq99</code>
-      <button class="copy" type="button">Скопировать</button>
+      <button class="copy" type="button" data-done="Скопировано">Скопировать</button>
     </div>
   </div>
 </div>
@@ -58,16 +67,56 @@
       или в приложении: Настройки → Приложение → «Написать отзыв».</li>
 </ul>
 </main>
-<script>
-document.querySelectorAll('.copy').forEach(function (b) {
-  b.addEventListener('click', function () {
-    var text = b.parentNode.querySelector('.addr').textContent.trim();
-    navigator.clipboard.writeText(text).then(function () {
-      b.textContent = 'Скопировано';
-      setTimeout(function () { b.textContent = 'Скопировать'; }, 2000);
-    });
-  });
-});
-</script>
+
+<main class="wrap doc" data-l="en" lang="en">
+<a class="back" href="./">← Diafilm</a>
+<h1>Support the project</h1>
+<p>Diafilm is free, with no ads and no data collection — and it will stay that way. If you like the app,
+you can support its development: any amount helps pay for the server and the time spent on new features. Thank you!</p>
+
+<h2>By card</h2>
+<div class="pay">
+  <a class="btn" href="https://pay.cloudtips.ru/p/8c5d9939" target="_blank" rel="noopener">Send via CloudTips</a>
+  <a class="btn btn2" href="https://boosty.to/lazymadmax" target="_blank" rel="noopener">Support on Boosty</a>
+</div>
+<p class="note">CloudTips — a one-time payment by bank card. Boosty — one-time or as a subscription.</p>
+
+<h2>With cryptocurrency</h2>
+<p class="note">Send only on the network shown — coins sent on another network will be lost.</p>
+<div class="crypto">
+  <div class="card coin">
+    <img src="img/qr-ton.svg" alt="QR code of the TON address" width="160" height="160">
+    <div>
+      <b>TON and USDT (TON network)</b>
+      <code class="addr">UQBfg0H88RWS277ztS4ay4tQrVbWLfgQh00rCtbpMObmyb31</code>
+      <button class="copy" type="button" data-done="Copied">Copy</button>
+    </div>
+  </div>
+  <div class="card coin">
+    <img src="img/qr-tron.svg" alt="QR code of the Tron address" width="160" height="160">
+    <div>
+      <b>USDT (TRC20, Tron network) and TRX</b>
+      <code class="addr">TKy3pvutgH9aCWNCTPxHk9JfKxRafARuHt</code>
+      <button class="copy" type="button" data-done="Copied">Copy</button>
+    </div>
+  </div>
+  <div class="card coin">
+    <img src="img/qr-ltc.svg" alt="QR code of the Litecoin address" width="160" height="160">
+    <div>
+      <b>Litecoin (LTC)</b>
+      <code class="addr">ltc1qapvfkqn424espzmsufz59tu49ydt7jvjatcq99</code>
+      <button class="copy" type="button" data-done="Copied">Copy</button>
+    </div>
+  </div>
+</div>
+
+<h2>Without money</h2>
+<ul>
+  <li>Tell your friends about Diafilm.</li>
+  <li>Write what to improve or what is broken: <a href="mailto:diafilm@tacthub.net">diafilm@tacthub.net</a>
+      or in the app: Settings → App → “Send feedback”.</li>
+</ul>
+</main>
+
 </body>
 </html>

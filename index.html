@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-lang="ru"
+      data-title-ru="Diafilm — картины, фото и арт на экранах телефона и телевизора"
+      data-title-en="Diafilm — paintings, photos and art on your phone and TV screens">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Diafilm — картины, фото и арт на экранах телефона и телевизора</title>
-<meta name="description" content="Diafilm сам меняет обои на телефоне, показывает слайд-шоу и фоторамку, а на телевизоре — заставку из картин и фото. Бесплатно, без рекламы и сбора данных.">
+<meta name="description" content="Diafilm сам меняет обои на телефоне, показывает слайд-шоу и фоторамку, а на телевизоре — заставку из картин и фото. Бесплатно, без рекламы и сбора данных. Wallpapers that change by themselves, a slideshow and a TV screensaver. Free, no ads.">
 <meta property="og:title" content="Diafilm">
-<meta property="og:description" content="Картины, фото и арт на экранах телефона и телевизора. Без рекламы и сбора данных.">
+<meta property="og:description" content="Картины, фото и арт на экранах телефона и телевизора. Paintings, photos and art on your phone and TV screens.">
 <meta property="og:image" content="https://sapronov-maks.github.io/diafilm/img/og.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="img/favicon.png">
 <link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
 </head>
 <body>
+
+<nav class="lang wrap">
+  <button type="button" data-set="ru" lang="ru">Русский</button>
+  <button type="button" data-set="en" lang="en">English</button>
+</nav>
+
+<div data-l="ru" lang="ru">
 
 <header class="hero wrap">
   <img class="icon" src="img/icon.png" alt="Иконка Diafilm">
   <h1>Diafilm</h1>
-  <p class="lead">Картины, фото и арт на экранах телефона и телевизора — каждый раз новые.</p>
+  <p class="lead">Картины, фото, аниме и арт на экранах телефона и телевизора — каждый раз новые.</p>
   <a class="btn" href="https://github.com/sapronov-maks/diafilm/releases/latest">Скачать для Android</a>
   <a class="btn btn2 btn-support" href="support.html">Поддержать</a>
-  <div class="note">Бесплатно · без рекламы и регистрации · Android 9 и новее, телефоны, планшеты и телевизоры</div>
+  <div class="note">Бесплатно · без рекламы и регистрации · 8 языков · Android 9 и новее, телефоны, планшеты и телевизоры</div>
 </header>
 
 <main class="wrap">
@@ -29,6 +39,7 @@
   <h2>На телефоне</h2>
   <ul class="points">
     <li>Обои меняются сами: экран блокировки — когда гаснет экран, рабочий стол — по таймеру или двойным касанием.</li>
+    <li>Картинки в 4K и HD, всегда под ваш экран: на телефоне — вертикальные, на планшете и телевизоре — горизонтальные.</li>
     <li>Новая картинка готовится заранее, поэтому подмены не видно.</li>
     <li>Слайд-шоу во весь экран и фоторамка, пока телефон заряжается.</li>
     <li>Ночью — спокойные тёмные картинки или без смены, как настроите.</li>
@@ -57,12 +68,13 @@
 <section>
   <h2>Что показывать — решаете вы</h2>
   <div class="cards">
-    <div class="card"><b>Фото дня</b><span>Bing, Windows Spotlight</span></div>
-    <div class="card"><b>Фото по темам</b><span>природа, города и другие темы</span></div>
+    <div class="card"><b>Фото дня</b><span>новый снимок каждый день</span></div>
+    <div class="card"><b>Фото по темам</b><span>природа, горы, океан, города, машины и другие темы</span></div>
     <div class="card"><b>Космос</b><span>снимки NASA</span></div>
     <div class="card"><b>Музеи</b><span>живопись и графика: The Met, Эрмитаж, Кливленд, SMK, V&amp;A и другие</span></div>
-    <div class="card"><b>Арт</b><span>цифровой арт</span></div>
+    <div class="card"><b>Аниме и арт</b><span>аниме, цифровой арт, неон, фэнтези</span></div>
     <div class="card"><b>Своя тема</b><span>картинки по вашим словам</span></div>
+    <div class="card"><b>По цвету и сезону</b><span>тёмные, светлые, одного цвета; осенние, зимние, новогодние</span></div>
     <div class="card"><b>Свои фото</b><span>из папки на телефоне</span></div>
     <div class="card"><b>Избранное</b><span>то, что понравилось</span></div>
   </div>
@@ -91,7 +103,7 @@
   <h2>Честно</h2>
   <ul class="points">
     <li>Без рекламы, регистрации и сбора данных — <a href="privacy.html">политика конфиденциальности</a>.</li>
-    <li>Картинки — из открытых источников, с указанием автора.</li>
+    <li>Бережёт батарею и мобильный интернет.</li>
     <li>Вопросы и отзывы: <a href="mailto:diafilm@tacthub.net">diafilm@tacthub.net</a>
         или в приложении: Настройки → Приложение → «Написать отзыв».</li>
     <li>Diafilm бесплатный. Если нравится — можно <a href="support.html">поддержать проект</a>.</li>
@@ -107,6 +119,108 @@
   <a href="mailto:diafilm@tacthub.net">Почта</a>
   <p>© 2026 Diafilm</p>
 </footer>
+
+</div>
+
+<div data-l="en" lang="en">
+
+<header class="hero wrap">
+  <img class="icon" src="img/icon.png" alt="Diafilm icon">
+  <h1>Diafilm</h1>
+  <p class="lead">Paintings, photos, anime and art on your phone and TV screens — new ones every time.</p>
+  <a class="btn" href="https://github.com/sapronov-maks/diafilm/releases/latest">Download for Android</a>
+  <a class="btn btn2 btn-support" href="support.html">Support</a>
+  <div class="note">Free · no ads, no sign-up · 8 languages · Android 9 and newer: phones, tablets and TVs</div>
+</header>
+
+<main class="wrap">
+
+<section>
+  <h2>On your phone</h2>
+  <ul class="points">
+    <li>Wallpapers change by themselves: the lock screen — when the screen turns off, the home screen — on a timer or with a double tap.</li>
+    <li>Pictures in 4K and HD that always fit your screen: vertical on a phone, horizontal on a tablet and TV.</li>
+    <li>The next picture is prepared in advance, so you never see the swap.</li>
+    <li>A full-screen slideshow and a photo frame while the phone is charging.</li>
+    <li>At night — calm dark pictures or no changes at all, as you prefer.</li>
+    <li>Every picture comes with its title, author and source.</li>
+  </ul>
+  <div class="shots phone">
+    <img src="img/en/phone-slideshow.jpg" alt="Slideshow on a phone" loading="lazy">
+    <img src="img/en/phone-feed.jpg" alt="Feed: what to show" loading="lazy">
+    <img src="img/en/phone-pictures.jpg" alt="Downloaded pictures" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2>On your TV</h2>
+  <ul class="points">
+    <li>Screensaver: when the TV is idle — paintings and photos instead of a dark screen.</li>
+    <li>Slideshow with the remote: arrows to flip through, OK for pause and “About artwork”.</li>
+  </ul>
+  <div class="shots tv">
+    <img src="img/en/tv-home.jpg" alt="Home screen on a TV" loading="lazy">
+    <img src="img/en/tv-slideshow.jpg" alt="Slideshow on a TV" loading="lazy">
+    <img src="img/en/tv-pictures.jpg" alt="Pictures on a TV" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2>You decide what to show</h2>
+  <div class="cards">
+    <div class="card"><b>Photo of the day</b><span>a new shot every day</span></div>
+    <div class="card"><b>Photos by theme</b><span>nature, mountains, ocean, cities, cars and other themes</span></div>
+    <div class="card"><b>Space</b><span>NASA images</span></div>
+    <div class="card"><b>Museums</b><span>paintings and prints: The Met, the Hermitage, Cleveland, SMK, V&amp;A and more</span></div>
+    <div class="card"><b>Anime and art</b><span>anime, digital art, neon, fantasy</span></div>
+    <div class="card"><b>Your own theme</b><span>pictures for your own words</span></div>
+    <div class="card"><b>By color and season</b><span>dark, light, a single color; autumn, winter, holidays</span></div>
+    <div class="card"><b>Your photos</b><span>from a folder on your phone</span></div>
+    <div class="card"><b>Favorites</b><span>the ones you liked</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>How to install</h2>
+  <p><b>Phone or tablet</b></p>
+  <ol class="steps">
+    <li>Tap “Download for Android” and download the <code>Diafilm-&lt;version&gt;.apk</code> file from the latest release.</li>
+    <li>Open the downloaded file. If the phone asks, allow installing from your browser or the Files app.</li>
+    <li>If Play Protect warns that the app is unknown: “More details” → “Install anyway”.
+        This is a normal warning for apps that are not from Google Play.</li>
+    <li>After that Diafilm finds new versions by itself and offers to install them
+        (to check manually: Settings → App → “Check”).</li>
+  </ol>
+  <p><b>TV</b></p>
+  <ol class="steps">
+    <li>Download the same file in the TV browser, or copy it from your phone or a USB drive.</li>
+    <li>Open the file in the TV file manager and allow the installation.</li>
+    <li>To make Diafilm your screensaver: TV settings → Display → Screen saver → Diafilm.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Honest</h2>
+  <ul class="points">
+    <li>No ads, no sign-up, no data collection — <a href="privacy.html#english">privacy policy</a>.</li>
+    <li>Easy on battery and mobile data.</li>
+    <li>Questions and feedback: <a href="mailto:diafilm@tacthub.net">diafilm@tacthub.net</a>
+        or in the app: Settings → App → “Send feedback”.</li>
+    <li>Diafilm is free. If you like it, you can <a href="support.html">support the project</a>.</li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="wrap">
+  <a href="https://github.com/sapronov-maks/diafilm/releases">All versions</a>
+  <a href="privacy.html#english">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="mailto:diafilm@tacthub.net">Email</a>
+  <p>© 2026 Diafilm</p>
+</footer>
+
+</div>
 
 </body>
 </html>
